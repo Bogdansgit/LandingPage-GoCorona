@@ -1,0 +1,91 @@
+.nav {
+
+  &__list {
+    @include flex-center;
+
+    text-align: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-black;
+    transition: 0.3s;
+
+    &:hover {
+      @include red-hover;
+      background-color: $main-red-color;
+    }
+  }
+
+  &__toggler {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    color: $color-black;
+
+    &::before {
+      content: "\2630";
+      cursor: pointer;
+      padding: 10px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+
+  &--open &__toggler::before {
+    cursor: pointer;
+    content: "\2718";
+    padding: 10px;
+    margin-left: 100px;
+  }
+
+  &--open &__list {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &--open &__link {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .nav__toggler {
+    display: flex;
+  }
+
+  .nav__list {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  .nav--open .nav__list {
+    @include flex-center;
+    
+    text-align: center;
+    flex-direction: row;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

@@ -1,0 +1,47 @@
+.page {
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    background-color: $main-white-color;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 55px;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    margin: 0 0 24px;
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    color: #616161;
+  }
+
+  &__title-red {
+    margin: 0;
+    color: $main-red-color;
+
+    &--no-space {
+      margin-left: -10px;
+    }
+  }
+
+  &__title-link {
+    color: $main-blue-color;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: #0057e4;
+    }
+  }
+}

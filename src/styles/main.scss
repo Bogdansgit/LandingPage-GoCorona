@@ -1,7 +1,11 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "utils/mixins";
+@import "utils/variables";
 
-body {
-  background: $c-gray;
-}
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/button";
+@import "blocks/stay-safe";
+@import "blocks/talk-to";
+@import "blocks/fingertips";

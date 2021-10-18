@@ -1,0 +1,104 @@
+.talk-to {
+  background-color: $light-grey-color;
+  width: 100%;
+  padding-top: 53px;
+
+  &__info-container {
+    max-width: 654px;
+    min-width: 180px;
+    min-height: 117px;
+    margin: 0 auto;
+    padding: 51px 76px 33px 31px;
+    background-image: url(/images/talk_to_info_backgrount.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (max-width: 719px) {
+      padding: 0 70px 33px;
+    }
+  }
+
+  &__info-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 28px 0;
+    background-color: $main-white-color;
+    border-radius: 16px;
+    box-shadow: 0 2px 24px 0 #587eec26;
+    
+    @media (max-width: 719px) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__info-title {
+    margin: 0;
+    font-family: "Rubic", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 2.5px;
+    color: $main-red-color;
+  }
+
+  &__info-desc {
+    margin: 5px 0 0;
+    font-family: "Rubic", sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 3.7px;
+    color: $color-black;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 46px 71px 116px 92px;
+
+    @media (max-width: 908px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 70px;
+    }
+  }
+
+  &__title-box {
+    max-width: 370px;
+
+    @media (max-width: 908px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+
+  &__video-box {
+    position: relative;
+    width: 521px;
+    height: 284px;
+    background-image: url(/images/video-box_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    box-shadow: 0 4px 18px 0 #587eec2e;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

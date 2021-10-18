@@ -1,0 +1,138 @@
+.header {
+  background-color: $light-grey-color;
+
+  &__container {
+    min-height: 700px;
+    background-image: url(/images/Header_background.png);
+    background-repeat: no-repeat;
+    background-size: 26% 100%;
+    background-position: right;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 43px 0 52px;
+    margin-bottom: 76px;
+  }
+
+  &__logo {
+    width: 140px;
+    height: 40px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 908px) {
+      display: block;
+    }
+  }
+
+  &__title-box {
+    max-width: 410px;
+    padding: 87px 0 0 70px;
+    margin-right: 30px;
+    margin-bottom: 148px;
+
+    @media (max-width: 1024px) {
+      padding-top: 60px;
+    }
+
+    @media (max-width: 1000px) {
+      padding-top: 30px;
+      margin-bottom: 120px;
+    }
+
+    @media (max-width: 908px) {
+      margin-bottom: 40px;
+    }
+    
+    @media (max-width: 620px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    max-width: 375px;
+  }
+
+  &__video-button-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 70px;
+    padding-bottom: 48px;
+    width: 240px;
+    height: 44px;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__video-button {
+    width: 44px;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  &__video-button-description-grey {
+    display: inline-block;
+    margin: 0;
+    padding-top: 7px;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #b0b0b0;
+    text-decoration: none;
+  }
+
+  &__video-button-description-black {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 7px;
+    font-family: "Rubik", sans-serif;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.2px;
+    color: $color-black;
+  }
+
+  &__main-image-box {
+    max-width: 547px;
+    min-width: 450px;
+    max-height: 394px;
+    margin-right: 53px;
+
+    @media (min-width: 1153px) {
+      margin-right: 80px;
+    }
+
+    @media (min-width: 1250px) {
+      margin-right: 150px;
+    }
+
+    @media (max-width: 908px) {
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    @media (max-width: 570px) {
+      min-width: 200px;
+      margin: 0 20px;
+    }
+  }
+
+  &__main-image {
+    width: 100%;
+  }
+}
